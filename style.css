@@ -11,14 +11,6 @@
     --clr-white: #ffffff;
 }
 
-/*
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -69,8 +61,6 @@ span {font-weight: bold;}
     max-width: 150px;
 }
 
-
-
 .footer ul {
     list-style-type: none;
     padding: 0;
@@ -96,13 +86,10 @@ span {font-weight: bold;}
     .footer-box{
         padding: 30px 16px;
     }
-}
 
 .footer-box img{
     width: 100px;
     margin-bottom: 1.5rem;
-    color: white;
-}
 
 .footer-links{
     margin-bottom: 1.5rem;
