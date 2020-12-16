@@ -1,1 +1,113 @@
 /* CSS Here */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    padding-right: 5%;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+    margin-left: 2rem;
+}
+
+.navlinks {
+    height: 100%;
+}
+
+.navlinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;  
+    display: block;
+    transition: all .5s;
+}
+
+.navlinks li:hover {
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+.navlinks li a:hover {
+    color: rgb(255, 130, 130);
+}
+
+.hambutton {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hambutton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hambutton {
+        display: flex;
+        margin-top: 4%;
+        margin-right: 2%;
+    }
+
+    .hambutton span:hover {
+        background-color: rgb(255, 130, 130);
+    }
+    .navlinks {
+        display: none;
+        width: 100%;
+    }
+
+    .navlinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navlinks ul li {
+        text-align: center;
+    }
+
+    .navlinks li a {
+        padding: .5rem 1rem;
+    }
+
+    .navlinks:active {
+        display: flex;
+    }
+}
