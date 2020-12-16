@@ -1,4 +1,16 @@
 /* CSS Here */
+
+:root {
+    --clr-red: #DF1531;
+    --clr-darkred: #871618;
+    --clr-grey: #C0B0B4;
+    --clr-green: #25352B;
+    --clr-beige: #CA9979;
+    --clr-yellow: #ffe043;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -110,4 +122,119 @@ body {
     .navlinks:active {
         display: flex;
     }
+}
+
+body {
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--clr-white); 
+    padding: 16px;
+    background-color: var(--clr-red);
+}
+
+h2 {
+    padding-left: 16px;
+    font-size: 29px; 
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+p {font-size: 16px; margin: 16px; text-align: justify;}
+span {font-weight: bold;}
+
+
+
+.whatis {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #ffe877;
+}
+#uglyparty img {
+    max-width: 375px;
+    align-content: center;
+}
+
+.photo1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.photo1 img {
+    max-width: 150px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    margin: 0;
+    background: #25352B;
+    color: white;
+
+}
+
+.footer-box{
+    padding: 30px 120px;
+}
+
+@media (max-width: 375px){
+    .footer-box{
+        padding: 30px 16px;
+    }
+
+.footer-box img{
+    width: 100px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links{
+    margin-bottom: 1.5rem;
+}
+.footer-link{
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.footer-link:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.footer-icons{
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+
+.footer-icon{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: white;
+    transition: 0.5s;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.footer-icon:hover{
+    transform: scale(1.2);
+}
+
+.copyright{
+    text-transform: capitalize;
+    font-size: 0.5rem;
+}
 }
