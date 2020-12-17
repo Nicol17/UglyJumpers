@@ -90,6 +90,7 @@ span {font-weight: bold;}
 .footer-box img{
     width: 100px;
     margin-bottom: 1.5rem;
+}
 
 .footer-links{
     margin-bottom: 1.5rem;
@@ -127,4 +128,5 @@ span {font-weight: bold;}
 .copyright{
     text-transform: capitalize;
     font-size: 0.5rem;
+}
 }
