@@ -17,7 +17,8 @@
 }
 
 body {
-    margin: 0;
+    margin-top: 28px;
+    margin-bottom: 28px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
@@ -31,14 +32,37 @@ h1 {
 }
 
 h2 {
-    padding-left: 16px;
+    padding: 0px 16px 0px 16px;
     font-size: 29px; 
-    margin-top: 35px;
-    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-bottom: 24px;
 }
-p {font-size: 16px; margin: 16px; text-align: justify;}
+p {font-size: 16px; margin-left: 16px; margin-right: 16px; text-align: justify;}
 span {font-weight: bold;}
 
+/* BUTTONS */
+.btn {
+    text-transform: uppercase;
+    background: var(--clr-yellow);
+    color: var(--clr-black);
+    padding: 0.875rem 1rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background: var(--clr-yellow2);
+  }
+  
+  .btn-ghost {
+    border: 2px solid var(--clr-yellow);
+    color: var(--clr-black);
+    background: var(--clr-white);
+  }
 
 /* NAVBAR */
 
@@ -144,25 +168,23 @@ span {font-weight: bold;}
         display: flex;
     }
 }
-
 /* NAVBAR ENDS */
+
+
 /* OUR STORY */
-
-
-
 #our-story {
     background-color: var(--clr-red);
 }
 
 .whatis {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 56px;
+    padding-top: 56px;
+    margin-bottom: 56px;
+    padding-bottom: 56px;
     background: var(--clr-yellow2);
 }
-#uglyparty img {
-    width: 100%;
-    align-content: center;
-}
+
+.history2 {margin-top: 56px}
 
 #photo-box {
     display: flex;
@@ -170,41 +192,46 @@ span {font-weight: bold;}
     justify-content: center;
     align-content: stretch;   
 }
-
 #photo-box img {
     max-width: 50%;
 }
 
-.get-sweater {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.btn-get {
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--clr-black);
-    background: var(--clr-yellow);
-    border: 1px solid #000000;
-    padding: 8px;
-    margin: 8px;
-    cursor: pointer;
+#uglyparty img {
+    width: 100%;
+    align-content: center;
 }
 
-.btn-get:hover {
-    background: var(--clr-yellow2);
+.section_products {margin-top: 56px}
+.products_shown {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+.products_shown img {
+    max-width: 100%;
+}
+.products_shown p {
+    text-align: left;
+    margin: 0;
+}
+.products_shown div {
+    margin-inline: 5px;
+}
+.btn_pr {
+    margin-top: 40px;
+    margin-bottom: 56px;
 }
 
 @media only screen and (min-width: 1000px) {
-    .navbar, #main-headline, .history1, .history2, #photo-box, .get_ugly {
-        margin: 16px 120px 16px 120px;
+    .navbar, #main-headline, .history1, .history2, #photo-box, .get_ugly, .section_products {
+        padding: 16px 120px 16px 120px;
     }
     .whatis div {
         margin: 16px 120px 16px 120px;
     }
 
-    h1 {font-size: 70px;  }
+    #main-headline {font-size: 70px; padding-top: 24px; padding-bottom: 24px;}
     h2 {font-size: 44px;}
    
     #txt_img_box {
