@@ -25,6 +25,10 @@ https://www.revolve.com/dresses/br/a8e981/?navsrc=main
 We used mainly google especially for images
 
 
+## Base design
+https://www.figma.com/file/hh6Oe8W9MDjIYp9C2cbdZz/UglySweaters?node-id=0%3A1
+
+
 ### Author
  
 Nicolaus
