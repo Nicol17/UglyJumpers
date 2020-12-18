@@ -1,0 +1,442 @@
+/* CSS Here */
+
+:root {
+  --clr-red: #df1531;
+  --clr-darkred: #871618;
+  --clr-grey: #c0b0b4;
+  --clr-green: #25352b;
+  --clr-beige: #ca9979;
+  --clr-yellow: #ffe043;
+  --clr-yellow2: #FFEE94;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --ff-primary: "Arial", sans-serif;
+  --transition: all 0.3s linear;
+  /* --font-size: 16px; */
+  --spacing: 0.06rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* align-items: center; */
+}
+
+
+h1,
+h2,
+h3 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.172;
+}
+
+h1 {
+  font-size: 70px;
+  color: var(--clr-white);
+}
+
+h2 {
+  font-size: 44px;
+  color: var(--clr-black);
+}
+
+p {
+  font-size: 16px;
+  color: var(--clr-black);
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.btn {
+  /* text-transform: uppercase; */
+  background: var(--clr-yellow);
+  color: var(--clr-black);
+  padding: 0.875rem 1rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background: var(--clr-yellow2);
+}
+
+.btn-ghost {
+  border: 2px solid var(--clr-yellow);
+  color: var(--clr-black);
+  background: var(--clr-white);
+}
+
+.section {
+  padding: 3.5rem 7.5rem 0rem 7.5rem;
+  /* margin-top: 3.5rem; */
+}
+.section-title{
+  text-align: left;
+  /* padding-top: 3.5rem; */
+  padding-bottom: 1.5rem;
+
+}
+
+/* 
+----------
+NAVBAR 
+----------
+*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+  /* background-color: transparent;
+  background: transparent;
+  border-color: transparent; */
+  color: #333;
+  padding-right: 5%;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  margin-left: 2rem;
+}
+
+.navlinks {
+  height: 100%;
+}
+
+.navlinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+  display: block;
+  transition: all 0.5s;
+}
+
+.navlinks li:hover {
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+.navlinks li a:hover {
+  color: rgb(255, 130, 130);
+}
+
+.hambutton {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hambutton .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hambutton {
+    display: flex;
+    /* margin-top: 4%;
+    margin-right: 2%; */
+  }
+
+  .hambutton span:hover {
+    background-color: rgb(255, 130, 130);
+  }
+  .navlinks {
+    display: none;
+    width: 100%;
+  }
+
+  .navlinks ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navlinks ul li {
+    text-align: center;
+  }
+
+  .navlinks li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navlinks:active {
+    display: flex;
+  }
+
+
+}
+
+
+
+/* 
+--------------
+index top page 
+--------------
+*/
+
+.hero {
+    /* min-height: 100vh; */
+    background-image: url("img/main.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    /* background-repeat: no-repeat;  Do not repeat the image  */
+    /* background-size: cover;  Resize the background image to cover the entire container */
+    height: 900px;
+}
+
+.hero-banner {
+  text-align: left;
+  color: var(--clr-white);
+  padding: 20rem 7.5rem 14rem 7.5rem;
+}
+
+.hero-btn{
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  background-color: var(--clr-yellow);
+  color: var(--clr-black)
+}
+.hero-btn:hover{
+  background: var(--clr-yellow2);
+}
+
+
+
+@media (max-width: 1000px) {
+
+  h1 {
+    font-size: 4.375rem;
+
+    color: var(--clr-white);
+    }
+
+    h2 {
+      font-size: 2.75rem;
+      color: var(--clr-black);
+    }
+  
+}
+
+
+@media (max-width: 375px) {
+
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.813rem;
+  }
+
+  .hero {
+    /* min-height: 100vh; */
+    background-image: url("img/main.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    /* object-fit: cover; */
+    /* background-repeat: no-repeat;  Do not repeat the image  */
+    /* background-size: cover;  Resize the background image to cover the entire container */
+    height: 35rem;
+}
+
+  .hero-banner {
+    text-align: left;
+    color: var(--clr-white);
+    padding: 15.5rem 1rem 0rem 1rem;
+  }
+
+}
+
+/* 
+-----------
+about what's ugly Sweaters
+-----------
+*/
+
+.about-btn {
+  margin-top: 2.5rem;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    h2 {
+      font-size: 2.75rem;
+      color: var(--clr-black);
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--clr-black);
+    }
+  
+}
+
+
+@media (max-width: 375px) {
+
+  h2 {
+    font-size: 1.813rem;
+  }
+
+
+  .section {
+    text-align: left;
+    color: var(--clr-black);
+    padding: 3.5rem 1rem 0rem 1rem;
+  }
+
+}
+
+
+/* 
+-----------
+index products
+-----------
+*/
+/* #index-products{
+  width: 100%;
+} */
+
+.index-products-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+  font-weight: bold;
+}
+
+.index-product-photo {
+  width: 80%;
+}
+
+.products-btn{
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+
+/* 
+-----------
+footer 
+-----------
+*/
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  margin: 0;
+  background: #25352B;
+  color: white;
+
+}
+
+.footer-box{
+  padding: 30px 120px;
+}
+
+
+.footer-box img{
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links{
+  margin-bottom: 1.5rem;
+}
+.footer-link{
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.footer-link:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.footer-icons{
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+
+.footer-icon{
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: white;
+  transition: 0.5s;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.footer-icon:hover{
+  transform: scale(1.2);
+}
+
+.copyright{
+  text-transform: capitalize;
+  font-size: 0.5rem;
+  color: white;
+}
+
+
+@media (max-width: 375px) {
+
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+
+  .footer-box{
+    padding: 30px 16px;
+    /* margin-top: 3.5rem; */
+}
+
+}
+
+
+
+
+
