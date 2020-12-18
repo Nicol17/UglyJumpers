@@ -7,6 +7,7 @@
     --clr-green: #25352B;
     --clr-beige: #CA9979;
     --clr-yellow: #ffe043;
+    --clr-yellow2: #FFEE94;
     --clr-black: #000000;
     --clr-white: #ffffff;
 }
@@ -14,6 +15,54 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+/* TEXT */
+h1 {
+    font-size: 40px;
+    color: var(--clr-white); 
+    padding: 16px;  
+}
+
+h2 {
+    padding: 0px 16px 0px 16px;
+    font-size: 29px; 
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+p {font-size: 16px; margin-left: 16px; margin-right: 16px; text-align: justify;}
+span {font-weight: bold;}
+
+/* BUTTONS */
+.btn {
+    text-transform: uppercase;
+    background: var(--clr-yellow);
+    color: var(--clr-black);
+    padding: 0.875rem 1rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background: var(--clr-yellow2);
+  }
+  
+  .btn-ghost {
+    border: 2px solid var(--clr-yellow);
+    color: var(--clr-black);
+    background: var(--clr-white);
+  }
 
 /* NAVBAR */
 
@@ -119,50 +168,86 @@
         display: flex;
     }
 }
+/* NAVBAR ENDS */
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
+
+/* OUR STORY */
+#our-story {
+    background-color: var(--clr-red);
 }
-
-h1 {
-    font-size: 40px;
-    color: var(--clr-white);
-    padding: 16px;
-}
-
-h2 {
-    padding-left: 16px;
-    font-size: 29px; 
-    margin-top: 35px;
-    margin-bottom: 16px;
-}
-p {font-size: 16px; margin: 16px; text-align: justify;}
-span {font-weight: bold;}
-
-
 
 .whatis {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background: #ffe877;
-}
-#uglyparty img {
-    max-width: 375px;
-    align-content: center;
+    margin-top: 56px;
+    padding-top: 56px;
+    margin-bottom: 56px;
+    padding-bottom: 56px;
+    background: var(--clr-yellow2);
 }
 
-.photo1 {
+.history2 {margin-top: 56px}
+
+#photo-box {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    align-content: stretch;   
+}
+#photo-box img {
+    max-width: 50%;
+}
+
+#uglyparty img {
+    width: 100%;
+    align-content: center;
+}
+
+.section_products {margin-top: 56px}
+.products_shown {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-content: stretch;
 }
-
-.photo1 img {
-    max-width: 150px;
+.products_shown img {
+    max-width: 100%;
+}
+.products_shown p {
+    text-align: left;
+    margin: 0;
+}
+.products_shown div {
+    margin-inline: 5px;
+}
+.btn_pr {
+    margin-top: 40px;
+    margin-bottom: 56px;
 }
 
+@media only screen and (min-width: 1000px) {
+    .navbar, #main-headline, .history1, .history2, #photo-box, .get_ugly, .section_products {
+        padding: 16px 120px 16px 120px;
+    }
+    .whatis div {
+        margin: 16px 120px 16px 120px;
+    }
+
+    #main-headline {font-size: 70px; padding-top: 24px; padding-bottom: 24px;}
+    h2 {font-size: 44px;}
+   
+    #txt_img_box {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "img prg1"
+                            "img prg2";
+    }
+    #uglyparty {grid-area: img; align-self: center;}
+    #p3 {grid-area: prg1; align-self: center;}
+    #hist_par2 {grid-area: prg2; align-self: center;}
+}
+
+
+/* FOOTER */
 .footer ul {
     list-style-type: none;
     padding: 0;
@@ -188,10 +273,12 @@ span {font-weight: bold;}
     .footer-box{
         padding: 30px 16px;
     }
+}
 
 .footer-box img{
     width: 100px;
     margin-bottom: 1.5rem;
+    color: white;
 }
 
 .footer-links{
@@ -230,147 +317,4 @@ span {font-weight: bold;}
 .copyright{
     text-transform: capitalize;
     font-size: 0.5rem;
-}
-}
-
-/*BANNER*/
-.banner{
-        background-color: var(--clr-red);
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 2.5em;
-}
-
-/*CHECBOX*/
-
-input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(1.25); /* IE */
-  -moz-transform: scale(1.25); /* FF */
-  -webkit-transform: scale(1.25); /* Safari and Chrome */
-  -o-transform: scale(1.25); /* Opera */
-  transform: scale(1.25);
-  padding: 10px;
-}
-
-.checkboxes {
-    text-align: center;
-    margin-top: 3%;
-}
-
-.checkboxes h2 {
-    text-transform: capitalize;
-    font-size: 1.80em;
-    font-weight: 400;
-}
-
-.checkboxes ul {
-    list-style: none;
-
-}
-
-.checkboxes li {
-    display: inline-block;
-    font-size: 1.25em;
-    padding: 0 .5em;
-    margin-top: 1.5%;
-    font-weight: 300;
-}
-
-input[type=checkbox]:checked + label {
-    color: #DF1531;
-    font-style: italic;
-}
-
-
-/*PRODUCTS*/
-
-.card {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    border-radius: 10px;
-    padding: 1em;
-    box-shadow: 0px 10px 5px #b2bec3;
-    text-align: center;
-}
-
-.card .title {
-    font-size: 1.25em;
-    font-weight: 550;
-    font-style: italic;
-    margin: .5% 0 3% 0;
-
-}
-
-.card .img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px;
-}
-.card img {
-    height: 75%;
-    width: 75%;
-}
-
-.card .text {
-    text-align: justify;
-    text-justify: auto;
-    margin:5%;
-    /* font-family: arial; */
-}
-
-.card .btn {
-    background-color: #c44446;
-    color: white;
-    border: none;
-    padding: 1em;
-    border-radius: 5px;
-    font-weight: 500;
-}
-
-.card .btn2 {
-    background-color: rgb(112, 180, 95);
-    color: white;
-    border: none;
-    padding: 1em;
-    border-radius: 5px;
-    font-weight: 500;
-}
-
-.card .btn:hover {
-    background-color: #750b0d;
-}
-
-.card .btn2:hover {
-    background-color: rgb(50, 97, 39);
-}
-
-.product-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1.5em;
-    margin: 3%;
-    align-items: center;
-
-}
-
-@media (max-width: 800px) {
-    .product-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
-        align-items: center;
-    
-    }
-
-}
-
-@media (max-width: 450px) {
-    .product-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1em;
-        align-items: center;
-    }
-
 }
