@@ -8,6 +8,7 @@
     --clr-yellow: #ffe043;
     --clr-black: #000000;
     --clr-white: #ffffff;
+}
 
 * {
     box-sizing: border-box;
