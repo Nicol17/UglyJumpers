@@ -143,7 +143,7 @@ span {font-weight: bold;}
 }
 
 /*INDEX*/
-.ibtn {
+.btn {
     /* text-transform: uppercase; */
     background: var(--clr-yellow);
     color: var(--clr-black);
@@ -156,7 +156,7 @@ span {font-weight: bold;}
     cursor: pointer;
     text-decoration: none;
   }
-  .ibtn:hover {
+  .btn:hover {
     background: var(--clr-yellow2);
   }
   
