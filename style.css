@@ -8,6 +8,7 @@
     --clr-yellow: #ffe043;
     --clr-black: #000000;
     --clr-white: #ffffff;
+}
 
 * {
     box-sizing: border-box;
@@ -497,6 +498,7 @@ iframe {
     .footer-box{
         padding: 30px 16px;
     }
+}
 
 .footer-box img{
     width: 100px;
@@ -542,7 +544,7 @@ iframe {
     color: var(--clr-white);
 
 }
-}
+
 
 /*BANNER*/
 .banner{
