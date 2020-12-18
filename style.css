@@ -196,6 +196,7 @@ span {font-weight: bold;}
     .footer-box{
         padding: 30px 16px;
     }
+}
 
 .footer-box img{
     width: 100px;
@@ -239,7 +240,7 @@ span {font-weight: bold;}
     text-transform: capitalize;
     font-size: 0.5rem;
 }
-}
+
 
 /*BANNER*/
 .banner{
