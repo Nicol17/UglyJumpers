@@ -350,8 +350,8 @@ NAVBAR
 
 .contact_title {
     background: var(--clr-red);
-    padding: 24px 16px;
-    margin: 56px 0;
+    /* padding: 24px 16px; */
+    /* margin: 56px 0; */
 }
 @media(min-width:376px){
     .contact_title {
