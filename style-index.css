@@ -51,7 +51,7 @@ p {
   line-height: 1.4;
 }
 
-.ibtn {
+.btn {
   /* text-transform: uppercase; */
   background: var(--clr-yellow);
   color: var(--clr-black);
@@ -64,7 +64,7 @@ p {
   cursor: pointer;
   text-decoration: none;
 }
-.ibtn:hover {
+.btn:hover {
   background: var(--clr-yellow2);
 }
 
@@ -159,6 +159,29 @@ NAVBAR
 }
 
 
+@media only screen and (min-width: 1000px) {
+  .navbar, #main-headline, .history1, .history2, #photo-box, .get_ugly, .section_products {
+      padding: 16px 120px 16px 120px;
+  }
+  .whatis div {
+      margin: 16px 120px 16px 120px;
+  }
+
+  #main-headline {font-size: 70px; padding-top: 24px; padding-bottom: 24px;}
+  h2 {font-size: 44px;}
+ 
+  #txt_img_box {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "img prg1"
+                          "img prg2";
+  }
+  #uglyparty {grid-area: img; align-self: center;}
+  #p3 {grid-area: prg1; align-self: center;}
+  #hist_par2 {grid-area: prg2; align-self: center;}
+
+  
 @media (max-width: 1000px) {
   .navbar {
     flex-direction: column;
@@ -435,7 +458,6 @@ footer
 }
 
 }
-
 
 
 
