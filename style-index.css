@@ -51,7 +51,7 @@ p {
   line-height: 1.4;
 }
 
-.btn {
+.ibtn {
   /* text-transform: uppercase; */
   background: var(--clr-yellow);
   color: var(--clr-black);
@@ -64,7 +64,7 @@ p {
   cursor: pointer;
   text-decoration: none;
 }
-.btn:hover {
+.ibtn:hover {
   background: var(--clr-yellow2);
 }
 
