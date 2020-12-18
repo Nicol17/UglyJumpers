@@ -15,7 +15,7 @@ As first we chose that our main goal will be to programm an e-commerce website. 
 And above all of that we think that not just us but all people need to have some fun nowadays. 
 
 
-## Why did you decide to make this project?
+## What reference did you use?
 
 We used some E-commerce site as a reference . 
 Klarna
@@ -25,7 +25,9 @@ https://www.revolve.com/dresses/br/a8e981/?navsrc=main
 
 We used mainly google especially for images
 
-## What was the most challenging part?
+## What did you learn? What was the most challenging part?
+
+We learned HTML and CSS, but also teamwork, communication and coordination. Also how to use github, figma, Slack and other tools designed to colaborate
 
 Deffinetly the most challenging part of the whole project was Github, everyone modifying the same files on a group project can create quite a few problems, pushing branches, pull requests and merging took more time than coding. Conflicts on style.css have been common due to selectors,therefore, multiple css files were applied in order to avoid conflicts.
 
