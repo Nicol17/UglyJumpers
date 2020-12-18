@@ -1,5 +1,5 @@
-![alt text](https://github.com/Nicol17/UglJumpers/blob/main/img/logo.png?raw=true)
- 
+![alt text](https://github.com/Nicol17/UglyJumpers/blob/main/logo.png?raw=true)
+
 E-commerce site that sells original Christmas ugly sweaters.
  
  
