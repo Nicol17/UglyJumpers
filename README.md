@@ -1,4 +1,4 @@
-# Ugly Sweaters
+![alt text](https://github.com/Nicol17/UglJumpers/blob/main/img/logo.png?raw=true)
  
 E-commerce site that sells original Christmas ugly sweaters.
  
