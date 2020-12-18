@@ -29,7 +29,7 @@ We used mainly google especially for images
 https://www.figma.com/file/hh6Oe8W9MDjIYp9C2cbdZz/UglySweaters?node-id=0%3A1
 
 
-### Author
+## Author
  
 Nicolaus
 Michaela
